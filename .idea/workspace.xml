@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2a28f6fd-58aa-4842-b0c6-804ca20f87eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Chauffeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Chauffeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Trip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/TravelCompany",
+    "last_opened_file_path": "C:/xampp/htdocs/TravelCompany/untitled",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682422794006</updated>
       <workItem from="1682422795158" duration="15000" />
-      <workItem from="1682550325125" duration="820000" />
+      <workItem from="1682550325125" duration="905000" />
     </task>
     <servers />
   </component>

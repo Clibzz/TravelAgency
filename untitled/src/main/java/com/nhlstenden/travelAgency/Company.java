@@ -53,8 +53,10 @@ public class Company {
      */
     public double calcTotalRevenueOfCars() {
         double totalRevenue = 0;
-        for (Trip trip : this.trips) {
-            totalRevenue += trip.getCar().calculateCosts(trip.getDistance());
+        if (trips.size() > 0) {
+            for (Trip trip : this.trips) {
+                totalRevenue += trip.getCar().calculateCosts(trip.getDistance());
+            }
         }
         return totalRevenue;
     }
@@ -65,8 +67,10 @@ public class Company {
      */
     public double calcAverageDistanceOfCars() {
         double totalDistance = 0;
-        for (Trip trip : this.trips) {
-            totalDistance += trip.getDistance();
+        if (trips.size() > 0) {
+            for (Trip trip : this.trips) {
+                totalDistance += trip.getDistance();
+            }
         }
         return totalDistance / this.cars.size();
     }
@@ -78,10 +82,12 @@ public class Company {
     public String getLongestDistance() {
         int longestDistance = 0;
         String longestTripName = "";
-        for (Trip trip : this.trips) {
-            if (trip.getDistance() >= longestDistance) {
-                longestDistance = trip.getDistance();
-                longestTripName = trip.getName();
+        if (trips.size() > 0) {
+            for (Trip trip : this.trips) {
+                if (trip.getDistance() >= longestDistance) {
+                    longestDistance = trip.getDistance();
+                    longestTripName = trip.getName();
+                }
             }
         }
         return "The longest trip is " + longestTripName + " with a distance of " + longestDistance;
@@ -93,11 +99,13 @@ public class Company {
      */
     public Chauffeur getChauffeurWithMostRevenue() {
         Chauffeur chauffeur = null;
-        for (Trip trip : this.trips) {
-            trip.getCar().getChauffeur().setRevenue(trip.getCar().getChauffeur().getRevenue() + trip.getCar().calculateCosts(trip.getDistance()));
-            for (Chauffeur chauffeurMostRev : this.chauffeurs) {
-                if (chauffeurMostRev.getRevenue() >= chauffeur.getRevenue()) {
-                    chauffeur = chauffeurMostRev;
+        if (trips.size() > 0) {
+            for (Trip trip : this.trips) {
+                trip.getCar().getChauffeur().setRevenue(trip.getCar().getChauffeur().getRevenue() + trip.getCar().calculateCosts(trip.getDistance()));
+                for (Chauffeur chauffeurMostRev : this.chauffeurs) {
+                    if (chauffeurMostRev.getRevenue() >= chauffeur.getRevenue()) {
+                        chauffeur = chauffeurMostRev;
+                    }
                 }
             }
         }
