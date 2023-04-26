@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a28f6fd-58aa-4842-b0c6-804ca20f87eb" name="Changes" comment="" />
+    <list default="true" id="2a28f6fd-58aa-4842-b0c6-804ca20f87eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/TravelAgency.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Chauffeur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Diesel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Electric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Petrol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Trip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/CarCompany&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/TravelCompany",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="TravelAgency" />
@@ -51,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682422794006</updated>
       <workItem from="1682422795158" duration="15000" />
+      <workItem from="1682550325125" duration="356000" />
     </task>
     <servers />
   </component>
