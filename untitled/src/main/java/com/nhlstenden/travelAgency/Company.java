@@ -49,6 +49,7 @@ public class Company {
 
     /**
      * Calculate the total revenue of all the cars of a company
+     *
      * @return The total revenue
      */
     public double calcTotalRevenueOfCars() {
@@ -63,6 +64,7 @@ public class Company {
 
     /**
      * Calculate the average distance of all the cars of a company
+     *
      * @return The average distance
      */
     public double calcAverageDistanceOfCars() {
@@ -77,6 +79,7 @@ public class Company {
 
     /**
      * Get the trip with the longest distance
+     *
      * @return The name and distance of the trip
      */
     public String getLongestDistance() {
@@ -95,6 +98,7 @@ public class Company {
 
     /**
      * Get the chauffeur with the most revenue
+     *
      * @return The chauffeur
      */
     public Chauffeur getChauffeurWithMostRevenue() {

@@ -47,6 +47,7 @@ public class Trip {
 
     /**
      * Get the costs of a single trip
+     *
      * @param trip A trip
      * @return The costs of the trip
      */

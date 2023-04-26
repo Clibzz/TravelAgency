@@ -27,6 +27,7 @@ public class Chauffeur {
 
     /**
      * Check if the name has been filled in
+     *
      * @param name The name of the chauffeur
      */
     public void checkName(String name) {
