@@ -34,5 +34,10 @@ public abstract class Car {
         //TODO check for license plate
     }
 
+    /**
+     * Calculate the costs of a trip
+     * @param distance The distance of a trip
+     * @return The costs of the trip
+     */
     public abstract double calculateCosts(double distance);
 }

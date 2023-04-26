@@ -25,6 +25,10 @@ public class Chauffeur {
         this.revenue = revenue;
     }
 
+    /**
+     * Check if the name has been filled in
+     * @param name The name of the chauffeur
+     */
     public void checkName(String name) {
         if (!name.isEmpty() || !name.equals("")) {
             this.name = name;

@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2a28f6fd-58aa-4842-b0c6-804ca20f87eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/TravelAgency.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Chauffeur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Diesel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Electric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Petrol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Chauffeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Chauffeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/nhlstenden/travelAgency/Trip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +32,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/xampp/htdocs/TravelCompany",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682422794006</updated>
       <workItem from="1682422795158" duration="15000" />
-      <workItem from="1682550325125" duration="356000" />
+      <workItem from="1682550325125" duration="820000" />
     </task>
     <servers />
   </component>

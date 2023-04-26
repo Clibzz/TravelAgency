@@ -45,6 +45,11 @@ public class Trip {
         this.customer = customer;
     }
 
+    /**
+     * Get the costs of a single trip
+     * @param trip A trip
+     * @return The costs of the trip
+     */
     public double getTripCosts(Trip trip) {
         return trip.getCar().calculateCosts(trip.getDistance());
     }

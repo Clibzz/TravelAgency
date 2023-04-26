@@ -47,6 +47,10 @@ public class Company {
         this.chauffeurs.add(chauffeur);
     }
 
+    /**
+     * Calculate the total revenue of all the cars of a company
+     * @return The total revenue
+     */
     public double calcTotalRevenueOfCars() {
         double totalRevenue = 0;
         for (Trip trip : this.trips) {
@@ -55,6 +59,10 @@ public class Company {
         return totalRevenue;
     }
 
+    /**
+     * Calculate the average distance of all the cars of a company
+     * @return The average distance
+     */
     public double calcAverageDistanceOfCars() {
         double totalDistance = 0;
         for (Trip trip : this.trips) {
@@ -63,7 +71,36 @@ public class Company {
         return totalDistance / this.cars.size();
     }
 
-    //TODO Car with longest distance
+    /**
+     * Get the trip with the longest distance
+     * @return The name and distance of the trip
+     */
+    public String getLongestDistance() {
+        int longestDistance = 0;
+        String longestTripName = "";
+        for (Trip trip : this.trips) {
+            if (trip.getDistance() >= longestDistance) {
+                longestDistance = trip.getDistance();
+                longestTripName = trip.getName();
+            }
+        }
+        return "The longest trip is " + longestTripName + " with a distance of " + longestDistance;
+    }
 
-    //TODO Chauffeur with most revenue
+    /**
+     * Get the chauffeur with the most revenue
+     * @return The chauffeur
+     */
+    public Chauffeur getChauffeurWithMostRevenue() {
+        Chauffeur chauffeur = null;
+        for (Trip trip : this.trips) {
+            trip.getCar().getChauffeur().setRevenue(trip.getCar().getChauffeur().getRevenue() + trip.getCar().calculateCosts(trip.getDistance()));
+            for (Chauffeur chauffeurMostRev : this.chauffeurs) {
+                if (chauffeurMostRev.getRevenue() >= chauffeur.getRevenue()) {
+                    chauffeur = chauffeurMostRev;
+                }
+            }
+        }
+        return chauffeur;
+    }
 }
