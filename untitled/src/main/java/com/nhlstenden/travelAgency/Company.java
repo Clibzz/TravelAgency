@@ -47,11 +47,23 @@ public class Company {
         this.chauffeurs.add(chauffeur);
     }
 
-    //TODO Revenue of all cars
+    public double calcTotalRevenueOfCars() {
+        double totalRevenue = 0;
+        for (Trip trip : this.trips) {
+            totalRevenue += trip.getCar().calculateCosts(trip.getDistance());
+        }
+        return totalRevenue;
+    }
 
-    //TODO Average distance of all cars
+    public double calcAverageDistanceOfCars() {
+        double totalDistance = 0;
+        for (Trip trip : this.trips) {
+            totalDistance += trip.getDistance();
+        }
+        return totalDistance / this.cars.size();
+    }
 
     //TODO Car with longest distance
-    
+
     //TODO Chauffeur with most revenue
 }

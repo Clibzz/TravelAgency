@@ -44,7 +44,7 @@ public class Trip {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-    
+
     public double getTripCosts(Trip trip) {
         return trip.getCar().calculateCosts(trip.getDistance());
     }
