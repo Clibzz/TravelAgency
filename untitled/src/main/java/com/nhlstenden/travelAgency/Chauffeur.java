@@ -9,7 +9,7 @@ public class Chauffeur {
         this.revenue = 0;
     }
 
-    public String name() {
+    public String getName() {
         return this.name;
     }
 
@@ -31,10 +31,10 @@ public class Chauffeur {
      * @param name The name of the chauffeur
      */
     public void checkName(String name) {
-        if (!name.isEmpty() || !name.equals("")) {
-            this.name = name;
-        } else {
+        if (name.isEmpty() || name.equals(" ")) {
             this.name = "BoltDriver";
+        } else {
+            this.name = name.substring(0, 1).toUpperCase() + name.substring(1);
         }
     }
 
