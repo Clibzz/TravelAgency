@@ -17,7 +17,6 @@ class ElectricTest {
         car = new Electric(jan, Brand.TOYOTA, "999-XX-9");
         customer = new Customer("Klant");
         trip = new Trip("Italy", car, 71, customer);
-
     }
 
     @Test
