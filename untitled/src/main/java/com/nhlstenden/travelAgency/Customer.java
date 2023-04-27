@@ -27,6 +27,7 @@ public class Customer {
 
     /**
      * Pay for a trip
+     *
      * @param trip The trip that's being paid for
      * @return True if paid, false if not paid
      */

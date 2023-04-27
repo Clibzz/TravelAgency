@@ -14,6 +14,7 @@ public class Diesel extends Car {
 
     /**
      * Get the environmental surchange of a trip
+     *
      * @param distance The distance of the trip
      * @return The environmental surcharge
      */
