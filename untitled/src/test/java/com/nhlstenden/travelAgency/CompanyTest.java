@@ -43,6 +43,16 @@ class CompanyTest {
 
     @Test
     void calcAverageDistanceOfCars() {
+        company.addCars(volvo);
+        company.addTrips(madrid);
+        assertEquals(1750, company.calcAverageDistanceOfCars(), "The average distance is incorrect");
+        company.addCars(toyota);
+        assertEquals(875, company.calcAverageDistanceOfCars(), "The average distance is incorrect");
+        company.addTrips(paris);
+        assertEquals(1117.5, company.calcAverageDistanceOfCars(), "The average distance is incorrect");
+        company.getTrips().remove(madrid);
+        company.getCars().remove(volvo);
+        assertEquals(485, company.calcAverageDistanceOfCars(), "The average distance is incorrect");
     }
 
     @Test
