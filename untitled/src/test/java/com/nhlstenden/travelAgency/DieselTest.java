@@ -14,7 +14,7 @@ class DieselTest {
     @BeforeEach
     void setUp() {
         pieter = new Chauffeur("Pieter");
-        car = new Diesel(pieter, Brand.VOLVO, "B99-XX-9");
+        car = new Diesel(pieter, Brand.VOLVO, "999-XX-9");
         customer = new Customer("Klant");
         trip = new Trip("Bolivia", car, 71, customer);
 
