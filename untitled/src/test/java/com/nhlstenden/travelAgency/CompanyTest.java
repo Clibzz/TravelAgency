@@ -28,6 +28,7 @@ class CompanyTest {
         paris = new Trip("Paris", toyota, 485, alex);
         madrid = new Trip("Madrid", volvo, 1750, lisa);
     }
+
     @Test
     void calcTotalRevenueOfCars() {
         company.addCars(toyota);
