@@ -15,7 +15,7 @@ class ElectricTest {
     void setUp() {
         jan = new Chauffeur("Jan");
         car = new Electric(jan, Brand.TOYOTA, "999-XX-9");
-        customer = new Customer("Klant");
+        customer = new Customer("Klant", 150.00);
         trip = new Trip("Italy", car, 71, customer);
     }
 

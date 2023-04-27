@@ -15,7 +15,7 @@ class DieselTest {
     void setUp() {
         pieter = new Chauffeur("Pieter");
         car = new Diesel(pieter, Brand.VOLVO, "999-XX-9");
-        customer = new Customer("Klant");
+        customer = new Customer("Klant", 350.00);
         trip = new Trip("Bolivia", car, 71, customer);
 
     }

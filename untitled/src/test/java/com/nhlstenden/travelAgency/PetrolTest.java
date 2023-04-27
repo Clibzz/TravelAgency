@@ -15,7 +15,7 @@ class PetrolTest {
     void setUp() {
         harry = new Chauffeur("Harry");
         car = new Petrol(harry, Brand.VOLVO, "999-XX-9");
-        customer = new Customer("Klant");
+        customer = new Customer("Klant", 225.00);
         trip = new Trip("America", car, 71, customer);
     }
 

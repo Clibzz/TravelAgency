@@ -21,8 +21,8 @@ class CompanyTest {
         company = new Company("BOLT");
         john = new Chauffeur("John");
         jane = new Chauffeur("Jane");
-        alex = new Customer("Alex");
-        lisa = new Customer("Lisa");
+        alex = new Customer("Alex", 500.00);
+        lisa = new Customer("Lisa", 750.00);
         toyota = new Diesel(john, Brand.TOYOTA, "777-CC-7");
         volvo = new Electric(jane, Brand.VOLVO, "555-DD-5");
         paris = new Trip("Paris", toyota, 485, alex);
