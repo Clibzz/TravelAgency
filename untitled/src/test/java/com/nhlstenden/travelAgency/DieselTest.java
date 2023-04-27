@@ -19,6 +19,7 @@ class DieselTest {
         trip = new Trip("Bolivia", car, 71, customer);
 
     }
+
     @Test
     void calculateCosts() {
         assertEquals(65.73, car.calculateCosts(trip.getDistance()), 0.01, "Costs are incorrect");
