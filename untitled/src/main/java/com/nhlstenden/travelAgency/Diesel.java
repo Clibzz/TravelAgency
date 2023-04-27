@@ -12,8 +12,12 @@ public class Diesel extends Car {
         return this.price;
     }
 
+    private double getEnvironmentalSurcharge(double distance) {
+        return Math.floor(distance / 10) * 3;
+    }
+
     @Override
     public double calculateCosts(double distance) {
-        return distance * this.price + ((distance / 10) * 3);
+        return distance * this.price + getEnvironmentalSurcharge(distance);
     }
 }
