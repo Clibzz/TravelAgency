@@ -57,8 +57,8 @@ class CompanyTest {
 
     @Test
     void getLongestDistance() {
-        company.addTrips(paris);
         company.addCars(toyota);
+        company.addTrips(paris);
         assertEquals("The longest trip is Paris with a distance of " + 485, company.getLongestDistance(), "The longest distance is incorrect");
         company.addCars(volvo);
         company.addTrips(madrid);
@@ -70,5 +70,14 @@ class CompanyTest {
 
     @Test
     void getChauffeurWithMostRevenue() {
+        company.addCars(volvo);
+        company.addTrips(madrid);
+        assertEquals("Jane", company.getChauffeurWithMostRevenue(), "This chauffeur does not have the most revenue");
+        company.addCars(toyota);
+        company.addTrips(paris);
+        assertEquals("John", company.getChauffeurWithMostRevenue(), "This chauffeur does not have the most revenue");
+        company.getTrips().remove(madrid);
+        company.getCars().remove(volvo);
+        assertEquals("John", company.getChauffeurWithMostRevenue(), "This chauffeur does not have the most revenue");
     }
 }

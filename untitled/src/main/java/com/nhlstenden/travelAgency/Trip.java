@@ -11,6 +11,7 @@ public class Trip {
         this.car = car;
         this.distance = distance;
         this.customer = customer;
+        this.car.getChauffeur().addRevenue(getCar().calculateCosts(getDistance()));
     }
 
     public String getName() {

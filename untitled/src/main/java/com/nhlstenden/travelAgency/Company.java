@@ -45,7 +45,7 @@ public class Company {
     public double calcTotalRevenueOfCars() {
         double totalRevenue = 0;
         if (trips.size() > 0) {
-            for (Trip trip : this.trips) {
+            for (Trip trip : getTrips()) {
                 totalRevenue += trip.getCar().calculateCosts(trip.getDistance());
             }
         }
@@ -60,7 +60,7 @@ public class Company {
     public double calcAverageDistanceOfCars() {
         double totalDistance = 0;
         if (trips.size() > 0) {
-            for (Trip trip : this.trips) {
+            for (Trip trip : getTrips()) {
                 totalDistance += trip.getDistance();
             }
         }
@@ -76,7 +76,7 @@ public class Company {
         int longestDistance = 0;
         String longestTripName = null;
         if (trips.size() > 0) {
-            for (Trip trip : this.trips) {
+            for (Trip trip : getTrips()) {
                 if (trip.getDistance() >= longestDistance) {
                     longestDistance = trip.getDistance();
                     longestTripName = trip.getName();
@@ -91,18 +91,15 @@ public class Company {
      *
      * @return The chauffeur
      */
-    public Chauffeur getChauffeurWithMostRevenue() {
+    public String getChauffeurWithMostRevenue() {
         Chauffeur chauffeur = null;
-        if (trips.size() > 0) {
-            for (Trip trip : this.trips) {
-                trip.getCar().getChauffeur().setRevenue(trip.getCar().getChauffeur().getRevenue() + trip.getCar().calculateCosts(trip.getDistance()));
-                for (Car car : this.cars) {
-                    if (car.getChauffeur().getRevenue() >= chauffeur.getRevenue()) {
-                        chauffeur = car.getChauffeur();
-                    }
-                }
+        double revenue = 0;
+        for (Trip trip : getTrips()) {
+            if (trip.getCar().getChauffeur().getRevenue() > revenue) {
+                revenue = trip.getCar().getChauffeur().getRevenue();
+                chauffeur = trip.getCar().getChauffeur();
             }
         }
-        return chauffeur;
+        return chauffeur.getName();
     }
 }

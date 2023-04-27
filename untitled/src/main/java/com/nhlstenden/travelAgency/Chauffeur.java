@@ -21,8 +21,8 @@ public class Chauffeur {
         return this.revenue;
     }
 
-    protected void setRevenue(double revenue) {
-        this.revenue = revenue;
+    protected void addRevenue(double revenue) {
+        this.revenue += revenue;
     }
 
     /**
