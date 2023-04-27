@@ -74,7 +74,7 @@ public class Company {
      */
     public String getLongestDistance() {
         int longestDistance = 0;
-        String longestTripName = "";
+        String longestTripName = null;
         if (trips.size() > 0) {
             for (Trip trip : this.trips) {
                 if (trip.getDistance() >= longestDistance) {

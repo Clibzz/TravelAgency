@@ -57,6 +57,15 @@ class CompanyTest {
 
     @Test
     void getLongestDistance() {
+        company.addTrips(paris);
+        company.addCars(toyota);
+        assertEquals("The longest trip is Paris with a distance of " + 485, company.getLongestDistance(), "The longest distance is incorrect");
+        company.addCars(volvo);
+        company.addTrips(madrid);
+        assertEquals("The longest trip is Madrid with a distance of " + 1750, company.getLongestDistance(), "The longest distance is incorrect");
+        company.getTrips().remove(madrid);
+        company.getTrips().remove(paris);
+        assertEquals("The longest trip is null with a distance of " + 0, company.getLongestDistance(), "The longest distance is incorrect");
     }
 
     @Test
