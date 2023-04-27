@@ -8,7 +8,7 @@ public class Electric extends Car {
         this.price = 0.25;
     }
 
-    public double price() {
+    public double getPrice() {
         return this.price;
     }
 

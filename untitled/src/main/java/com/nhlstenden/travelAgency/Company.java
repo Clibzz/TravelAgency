@@ -6,16 +6,14 @@ public class Company {
     private String name;
     private HashSet<Car> cars;
     private HashSet<Trip> trips;
-    private HashSet<Chauffeur> chauffeurs;
 
     public Company(String name) {
         this.name = name;
         this.cars = new HashSet<>();
         this.trips = new HashSet<>();
-        this.chauffeurs = new HashSet<>();
     }
 
-    public String name() {
+    public String getName() {
         return this.name;
     }
 
@@ -23,7 +21,7 @@ public class Company {
         this.name = name;
     }
 
-    public HashSet<Car> cars() {
+    public HashSet<Car> getCars() {
         return this.cars;
     }
 
@@ -31,20 +29,12 @@ public class Company {
         this.cars.add(car);
     }
 
-    public HashSet<Trip> trips() {
+    public HashSet<Trip> getTrips() {
         return this.trips;
     }
 
     public void addTrips(Trip trip) {
         this.trips.add(trip);
-    }
-
-    public HashSet<Chauffeur> chauffeurs() {
-        return this.chauffeurs;
-    }
-
-    public void addChauffeurs(Chauffeur chauffeur) {
-        this.chauffeurs.add(chauffeur);
     }
 
     /**
@@ -106,9 +96,9 @@ public class Company {
         if (trips.size() > 0) {
             for (Trip trip : this.trips) {
                 trip.getCar().getChauffeur().setRevenue(trip.getCar().getChauffeur().getRevenue() + trip.getCar().calculateCosts(trip.getDistance()));
-                for (Chauffeur chauffeurMostRev : this.chauffeurs) {
-                    if (chauffeurMostRev.getRevenue() >= chauffeur.getRevenue()) {
-                        chauffeur = chauffeurMostRev;
+                for (Car car : this.cars) {
+                    if (car.getChauffeur().getRevenue() >= chauffeur.getRevenue()) {
+                        chauffeur = car.getChauffeur();
                     }
                 }
             }

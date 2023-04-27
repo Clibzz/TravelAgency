@@ -8,7 +8,7 @@ public class Petrol extends Car {
         this.price = 0.50;
     }
 
-    public double price() {
+    public double getPrice() {
         return this.price;
     }
 
