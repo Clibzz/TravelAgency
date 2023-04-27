@@ -25,6 +25,11 @@ public class Customer {
         this.balance = balance;
     }
 
+    /**
+     * Pay for a trip
+     * @param trip The trip that's being paid for
+     * @return True if paid, false if not paid
+     */
     public boolean payDebt(Trip trip) {
         if (trip.getCustomer() == this) {
             if (this.balance >= trip.getTripCosts(trip)) {

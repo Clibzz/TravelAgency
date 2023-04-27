@@ -12,6 +12,11 @@ public class Diesel extends Car {
         return this.price;
     }
 
+    /**
+     * Get the environmental surchange of a trip
+     * @param distance The distance of the trip
+     * @return The environmental surcharge
+     */
     private double getEnvironmentalSurcharge(double distance) {
         return Math.floor(distance / 10) * 3;
     }
