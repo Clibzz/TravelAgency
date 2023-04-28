@@ -43,7 +43,7 @@ public abstract class Car {
     }
 
     /**
-     * Check if a license plate is of the correct format
+     * Check if a license plate is of the correct format, set default values for parts that are incorrect
      *
      * @param licensePlate The license plate to check
      */
