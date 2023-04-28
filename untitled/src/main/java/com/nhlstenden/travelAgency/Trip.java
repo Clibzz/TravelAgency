@@ -35,6 +35,7 @@ public class Trip {
 
     /**
      * Change the distance of a trip & update the revenue of the chauffeur
+     *
      * @param distance The distance of a trip
      */
     public void setDistance(int distance) {

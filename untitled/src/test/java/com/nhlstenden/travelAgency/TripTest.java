@@ -22,6 +22,7 @@ class TripTest {
         madrid = new Trip("Madrid", volvo, 1750, lisa);
         barcelona = new Trip("Barcelona", volvo, 1510, lisa);
     }
+
     @Test
     void setDistance() {
         company.addCars(volvo);

@@ -18,8 +18,16 @@ public abstract class Car {
         return this.chauffeur;
     }
 
-    public void setChauffeur(Chauffeur chauffeur) {
+    /**
+     * Change the chauffeur of a trip, update the revenues of both the old and the new chauffeur
+     *
+     * @param chauffeur The new chauffeur
+     * @param trip      The trip of which the chauffeur will be changed
+     */
+    public void setChauffeur(Chauffeur chauffeur, Trip trip) {
+        getChauffeur().removeRevenue(trip.getTripCosts(trip));
         this.chauffeur = chauffeur;
+        getChauffeur().addRevenue(trip.getTripCosts(trip));
     }
 
     public Brand getBrand() {
