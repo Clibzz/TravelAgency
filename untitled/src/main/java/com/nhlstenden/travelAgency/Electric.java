@@ -14,6 +14,6 @@ public class Electric extends Car {
 
     @Override
     public double calculateCosts(double distance) {
-        return distance * this.price;
+        return distance * getPrice();
     }
 }

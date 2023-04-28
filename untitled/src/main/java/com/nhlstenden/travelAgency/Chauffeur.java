@@ -21,6 +21,10 @@ public class Chauffeur {
         return this.revenue;
     }
 
+    public void removeRevenue(double revenue) {
+        this.revenue -= revenue;
+    }
+
     protected void addRevenue(double revenue) {
         this.revenue += revenue;
     }

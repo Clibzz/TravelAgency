@@ -35,6 +35,7 @@ public class Company {
 
     public void addTrips(Trip trip) {
         this.trips.add(trip);
+        trip.getCar().getChauffeur().addRevenue(trip.getCar().calculateCosts(trip.getDistance()));
     }
 
     /**

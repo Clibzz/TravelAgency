@@ -11,7 +11,6 @@ public class Trip {
         this.car = car;
         this.distance = distance;
         this.customer = customer;
-        this.car.getChauffeur().addRevenue(getCar().calculateCosts(getDistance()));
     }
 
     public String getName() {
@@ -34,8 +33,14 @@ public class Trip {
         return this.distance;
     }
 
+    /**
+     * Change the distance of a trip & update the revenue of the chauffeur
+     * @param distance The distance of a trip
+     */
     public void setDistance(int distance) {
+        getCar().getChauffeur().removeRevenue(getCar().calculateCosts(getDistance()));
         this.distance = distance;
+        getCar().getChauffeur().addRevenue(getCar().calculateCosts(getDistance()));
     }
 
     public Customer getCustomer() {

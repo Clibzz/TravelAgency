@@ -24,6 +24,6 @@ public class Diesel extends Car {
 
     @Override
     public double calculateCosts(double distance) {
-        return distance * this.price + getEnvironmentalSurcharge(distance);
+        return distance * getPrice() + getEnvironmentalSurcharge(distance);
     }
 }
